@@ -3,6 +3,7 @@ import drugminer_v1 from '../assets/images/drugminer_v1.png';
 import obj_detection from '../assets/images/drone_object_detection.webp';
 import bcancer from '../assets/images/b-cancer.png';
 import icebreak from '../assets/images/icebreak.png';
+import car_dashboard from '../assets/images/car-dashboard.png';
 import '../assets/styles/Project.scss';
 
 function Project() {
@@ -25,9 +26,14 @@ function Project() {
                     integrate cross-team software within a ROS ecosystem.</p>
             </div>
             <div className="project">
-                {/* host this on my own site somewhere evntually */}
+                <a href={`${process.env.PUBLIC_URL}/docs/car_sales_dashboard.pdf`} target="_blank" rel="noreferrer"><img src={car_dashboard} className="zoom" alt="thumbnail" width="100%"/></a>
+                <a href="https://github.com/jimmywin656/US-Car-Sales-Analysis" target="_blank" rel="noreferrer"><h2>Car Sales Dashboard</h2></a>
+                <p>Comprehensive analysis of car sales trends in the United States using a US based car sales dataset (2022-2023). This project includes data cleaning, exploratory analysis, visualizations, 
+                    and actionable business insights revealing patterns in pricing, sales volume, customer behavior, seasonal demand, and regional differences.</p>
+            </div>
+            <div className="project">
                 <a href={`${process.env.PUBLIC_URL}/docs/ml_4200_report.pdf`} target="_blank" rel="noreferrer"><img src={bcancer} className="zoom" alt="thumbnail" width="100%"/></a>        
-                <a href="https://github.com/EdgarO27/ProjectML/tree/main" target="_blank" rel="noreferrer"><h2>Breast Cancer Detection</h2></a>
+                <a href="https://github.com/jimmywin656/US-Car-Sales-Analysis" target="_blank" rel="noreferrer"><h2>Breast Cancer Detection</h2></a>
                 <p>Developed a 4-layer convolutional neural network for breast cancer classification using histopathological images from the BreakHis dataset achieving
                     89.3% accracy and 94.4% precision in distinguishing malignant from benign tumors.
                 </p>
